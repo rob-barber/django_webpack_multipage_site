@@ -1,8 +1,14 @@
-{# polls/templates/polls/index.html #}
+{# templates/polls/index.html #}
 
 {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+
+<style>
+    body {
+        background: white url({% static 'images/background.gif' %}) no-repeat;
+    }
+</style>
 
 {% if latest_question_list %}
     <ul>
